@@ -6,7 +6,7 @@ public abstract class Entity<TId>(TId id)
 {
   public TId Id { get; private set; } = id;
 
-  public readonly List<IDomainEvent> _domainEvents = [];
+  private readonly List<IDomainEvent> _domainEvents = [];
 
   public IReadOnlyList<IDomainEvent> GetDomainEvents() => _domainEvents;
 
