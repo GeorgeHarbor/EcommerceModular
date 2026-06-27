@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace SharedKernel.Primitives;
 
 public abstract class Entity<TId>(TId id)
