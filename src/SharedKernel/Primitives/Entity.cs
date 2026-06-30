@@ -3,7 +3,7 @@ namespace SharedKernel.Primitives;
 
 // Base class for all domain entities; generic over the type of the identifier (TId).
 // The primary constructor takes the id and assigns it via the property initializer below.
-public abstract class Entity<TId>(TId id)
+public abstract class Entity<TId>(TId id) : IHasDomainEvents
 {
   // The unique identifier of the entity; readable by everyone, settable only inside this class.
   public TId Id { get; private set; } = id;

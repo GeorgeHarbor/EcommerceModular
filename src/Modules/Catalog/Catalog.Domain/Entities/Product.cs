@@ -26,6 +26,8 @@ public sealed class Product : AggregateRoot<ProductId>
         // Assign the price passed in.
         Price = price;
     }
+    
+    private Product() : base(default!){}
 
     // The product name; readable publicly, changeable only inside this class.
     public string Name { get; private set; }

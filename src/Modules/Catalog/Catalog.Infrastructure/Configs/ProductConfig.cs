@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Catalog.Infrastructure.Configs;
 
-internal sealed class ProductConfig
+internal sealed class ProductConfig: IEntityTypeConfiguration<Product>
 {
-    public void Configure(EntityTypeBuilder<Product> builder)
+    public void Configure(EntityTypeBuilder<Product> builder) 
     {
         builder.ToTable("products");
         
