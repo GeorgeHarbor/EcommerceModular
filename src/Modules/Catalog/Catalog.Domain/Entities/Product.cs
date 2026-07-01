@@ -27,10 +27,14 @@ public sealed class Product : AggregateRoot<ProductId>
         Price = price;
     }
     
-    private Product() : base(default!){}
+#pragma warning disable CS8618
+private Product() : base(default!)
+{
+}
+#pragma warning restore CS8618
 
     // The product name; readable publicly, changeable only inside this class.
-    public string Name { get; private set; }
+    public string Name { get; private set; } = string.Empty;
     // The product price as a Money value object; changeable only inside this class.
     public Money Price { get; private set; }
     // Whether the product is currently active/available.

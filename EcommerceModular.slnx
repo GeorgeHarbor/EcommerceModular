@@ -5,6 +5,7 @@
   </Folder>
   <Folder Name="/src/Modules/" />
   <Folder Name="/src/Modules/Catalog/">
+    <Project Path="src/Modules/Catalog/Catalog.Api/Catalog.Api.csproj" />
     <Project Path="src/Modules/Catalog/Catalog.Application/Catalog.Application.csproj" />
     <Project Path="src/Modules/Catalog/Catalog.Domain/Catalog.Domain.csproj" />
     <Project Path="src/Modules/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />

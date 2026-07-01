@@ -2,5 +2,25 @@
 
   <PropertyGroup>
   </PropertyGroup>
+  
+  <ItemGroup>
+   <FrameworkReference Include="Microsoft.AspNetCore.App" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MediatR.Contracts">
+      <HintPath>..\..\..\..\.nuget\packages\mediatr.contracts\2.0.1\lib\netstandard2.0\MediatR.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.extensions.configuration.abstractions\10.0.9\lib\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\10.0.0\lib\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+  </ItemGroup>
 
 </Project>
