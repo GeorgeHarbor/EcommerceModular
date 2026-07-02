@@ -1,3 +1,4 @@
+using Catalog.Api.Endpoints;
 using Catalog.Application;
 using Catalog.Infrastructure;
 using Microsoft.AspNetCore.Routing;
@@ -5,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SharedKernel;
 
-namespace Catalog.Api.Endpoints;
+namespace Catalog.Api;
 
 public sealed class CatalogModule : IModule
 {
