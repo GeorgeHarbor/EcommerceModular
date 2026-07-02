@@ -14,12 +14,14 @@ internal sealed class ProductConfig: IEntityTypeConfiguration<Product>
         builder.HasKey(x => x.Id);
 
         builder.Property(p => p.Id)
+            .HasColumnName("id")
             .HasConversion(
                 id => id.Value,
                 value => new ProductId(value))
             .ValueGeneratedNever();
 
         builder.Property(p => p.Name)
+            .HasColumnName("name")
             .HasMaxLength(200)
             .IsRequired();
 
@@ -34,6 +36,7 @@ internal sealed class ProductConfig: IEntityTypeConfiguration<Product>
         });
 
         builder.Property(p => p.IsActive)
+            .HasColumnName("is_active")
             .IsRequired();
 
     }
